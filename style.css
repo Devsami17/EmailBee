@@ -5,7 +5,7 @@ body{
     color: #000;
     font-family: "Raleway";
 }
-header h1{
+header h1 , footer h1{
     font-weight: 600;
     font-size: 32px;
     font-family: "Raleway";
@@ -225,4 +225,9 @@ ul li.active{
     border-bottom: 1px solid #333;
     padding-bottom: 5px;
     font-size: 16px;
+}
+footer ul li{
+    margin-top: 10px;
+    font-weight: 500;
+    font-family: "Roboto";
 }
