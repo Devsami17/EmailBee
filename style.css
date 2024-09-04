@@ -1,0 +1,228 @@
+body{
+    scroll-behavior: smooth;
+    
+    background-color: #F9E00B;
+    color: #000;
+    font-family: "Raleway";
+}
+header h1{
+    font-weight: 600;
+    font-size: 32px;
+    font-family: "Raleway";
+}
+header .container{
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+}
+header .container  a {
+    font-family: "Roboto";
+ text-decoration: none !important;
+ font-weight: 600;
+ color: #000;
+   
+}
+header .container  a.active{
+    background-color: #000;
+    color: #F9E00B;
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+header .container button{
+    background-color: #009050;
+    color: #F9E00B;
+    border: none;
+    font-weight: 500;
+    font-family: "Roboto";
+    outline: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+section h1{
+    font-style: italic;
+}
+section{
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+section h4{
+    font-size: 19px;
+    font-family: "Roboto";
+    font-weight: 600;
+    margin-top: 30px;
+}
+.section-1{
+    border-bottom: 2px solid #000;
+}
+.box-parent{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-parent span{
+    font-size: 100px;
+    position: relative;
+    top: -10px;
+}
+.boxes{
+    background-color: #000;
+    padding: 0px 15px;
+    height: 70px;
+padding-top: 10px;
+    font-family: "Roboto";
+    font-weight: 500;
+    width: 210px;
+    text-align: center;
+    color: #F9E00B;
+    border-radius: 4px;
+    
+}
+@media only screen and (min-width:300px) and (max-width:995px){
+    header .container{
+        display: none !important;
+    }
+    .respo-header{
+        display: flex !important;
+        justify-content: space-between;
+        padding: 0px 15px;
+        align-items: center;
+    }
+    .respo-header i{
+        font-size: 30px;
+       
+    }
+    .respo-header h1{
+        font-size: 25px;
+    }
+    .box-parent span{
+display: none;
+    }
+    .boxes{
+        margin-top: 10px;
+
+    }
+}
+.respo-header{
+    display: none;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #fff;
+    outline: none;
+    border-radius: 5px;
+    margin: 30px 0;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 180px; /* Position tooltip below the slider thumb */
+    left: 0;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 1;
+    transition: opacity 0.3s, left 0.3s;
+    pointer-events: none;
+}
+
+.slider-container .slider::-webkit-slider-thumb {
+    position: relative;
+    z-index: 2;
+}
+
+.slider-container:hover .slider::-webkit-slider-thumb {
+    background-color: #000;
+}
+.section-2 h2{
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 20px;
+    color: #f25f0a;
+}
+.col-lg-5 h3{
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 600;   
+    background-color: #fff;
+    color: #f25f0a;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+.create-acc{
+    border: none;
+    outline: none;
+    background-color: #009050;
+    color: #F9E00B;
+    font-family: "Roboto";
+    font-weight: 500;
+    padding: 0px 10px;
+    border-radius: 4px;
+}
+@media only screen and (min-width:300px) and (max-width:550px){
+    .div-2{
+        flex-wrap: wrap;
+    }
+    .div-2 h2{
+        width: 100%;
+        text-align: center;
+    }
+    .div-2 div{
+        display: flex; 
+        justify-content: center;
+        gap:0px;
+        width: 100%;
+    }
+}
+ul li{
+    font-family: "Roboto";
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+}
+ul li.active{
+    font-size: 20px;
+    font-weight: 700;
+}
+.section-4 p{
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "roboto";
+}
+.section-4 strong{
+    font-family: "Raleway";
+    font-weight: 700;
+}
+.offcanvas-body ul {
+    padding-left: 10px;
+}
+.offcanvas-body ul li{
+    margin-top: 10px;
+    font-family: "Raleway";
+    font-weight: 500;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    font-size: 16px;
+}
