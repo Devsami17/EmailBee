@@ -1,14 +1,14 @@
-const slider = document.getElementById('priceRange');
-const sliderAmount = document.getElementById('slider-amount');
+const slider2 = document.getElementById('priceRange2');
+const sliderAmount2 = document.getElementById('slider-amount-2');
 const price  = document.getElementById('price');
 
 const pricePoints = ['10,000', '20,000', '30,000', '40,000', '50,000','60,000','70,000','80,000','90,000','100,000'];
 
 // Function to update the slider amount display
 function updateSliderAmount() {
-    const value = slider.value;
+    const value = slider2.value;
     const amount = pricePoints[value - 1]; // Get the amount corresponding to the slider position
-    sliderAmount.textContent = amount;
+    sliderAmount2.textContent = amount;
     if(amount == "10,000"){
         price.textContent="$1,000.00"
     }
@@ -49,4 +49,4 @@ function updateSliderAmount() {
 updateSliderAmount();
 
 // Update the amount display on slider input
-slider.addEventListener('input', updateSliderAmount);
+slider2.addEventListener('input', updateSliderAmount);

@@ -1,9 +1,12 @@
 body{
     scroll-behavior: smooth;
     
-    background-color: #F9E00B;
+   
     color: #000;
     font-family: "Raleway";
+}
+header{
+    background-color: #F9E00B;
 }
 header h1 , footer h1{
     font-weight: 600;
@@ -47,6 +50,7 @@ section h1{
     padding-bottom: 20px;
 
 }
+
 section h4{
     font-size: 19px;
     font-family: "Roboto";
@@ -54,7 +58,11 @@ section h4{
     margin-top: 30px;
 }
 .section-1{
+    background-color: #F9E00B;
     border-bottom: 2px solid #000;
+}
+.section-2 , .section-3,.section-4{
+    background-color: #F9E00B;
 }
 .box-parent{
     gap: 10px;

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Admin - Email Bee</title>
+
+   <link rel="icon" type="image/x-icon" href="../abc.png">
+
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="../assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class=" d-flex align-items-center">
+       
+     
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+  
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+ 
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <!-- <span class="badge bg-primary badge-number">4</span> -->
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 1 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+         
+        
+       
+
+         
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+    
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+           <i class="bi bi-person" style="font-size: 25px;"></i>
+            <span class="d-none d-md-block dropdown-toggle ps-2"></span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Admin</h6>
+           
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Log Out</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <div class="d-flex justify-content-center mb-5"> 
+        <img src="../abc.png" height="64px" width="auto" alt="not found">
+      </div>
+
+
+      <li class="nav-item">
+        <a class="nav-link " data-bs-target="#components-nav" onclick="window.location='Filter-manager.html'" data-bs-toggle="collapse" href="Filter-manager.html">
+         &nbsp;<span>Filter Manager</span><i class="bi bi-chevron-right ms-auto"></i>
+        </a>
+     
+      </li><!-- End Components Nav -->
+
+  
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" onclick="window.location='Master-database.html'" href="Master-database.html">
+         &nbsp;<span>Master Database</span><i class="bi bi-chevron-right ms-auto"></i>
+        </a>
+      
+      </li><!-- End Tables Nav -->
+
+
+
+    </ul>
+
+    <div class="sidebar-third">
+      <p>© Since 2024 EmailBee All rights reserved</p>
+
+    </div>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-12 col-12 ">
+          <div class="d-flex gap-4 flex-wrap">
+
+            <!-- Sales Card -->
+            <div class="col-xxl-12 col-12 col-lg-12 col-md-12 ">
+              <div class="card info-card sales-card "  style="overflow: auto !important;">
+
+             
+
+                <div class="card-body">
+                  <div class="d-flex justify-content-between flex-wrap filter-parent">
+                    <div>
+                     <h5 class="card-title"><span>Filter-Manager</span></h5>   
+                    </div>
+                  
+<div class="d-flex gap-2 filters flex-wrap">
+
+  <div class="d-flex justify-content-normal align-items-center gap-2 me-1">
+    <label for="">Show Entries</label>
+    <select name="" id="">
+      <option value="" >5</option>
+      <option value="" selected>10</option>
+      <option value="">25</option>
+      <option value="">50</option>
+      <option value="">75</option>
+      <option value="">100</option>
+      <option value="">ALL</option>
+
+    </select>
+  </div>
+  <div class="d-flex justify-content-normal align-items-center gap-2">
+    <label for="">Type</label>
+    <select name="" id="" style="width: 160px;">
+      <option value="" selected >All</option>
+      <option value="">Travel</option>
+      <option value="">Shopping</option>
+      <option value="">Entertainment</option>
+      <option value="">Finance</option>
+
+    </select>
+  </div>
+
+  <button class="pause-btn"><i class="bi bi-cloud-arrow-up"></i> &nbsp;Upload</button>
+  <button class="pause-btn"><i class="bi bi-filetype-csv"></i> &nbsp;Export As CSV</button>
+
+
+
+</div>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <table>
+                      <tr class="header">
+                        <th>Code</th>
+                        <th>Company Name</th>
+                        <th>URL</th>
+                        <th>Type</th>
+                      </tr>
+                      <tr>
+                        <td>DVC</td>
+                        <td>Disney Vacation Club</td>
+                        <td><a href="https://disneyvacationclub.disney.go.com/sign-in">https://disneyvacationclub.disney.go.com/sign-in</a></td>
+                        <td>Travel</td>
+                      </tr>
+                      <tr>
+                        <td>DW</td>
+                        <td>Disney World</td>
+                        <td><a href="https://disneyworld.disney.go.com/login">https://disneyworld.disney.go.com/login</a></td>
+                        <td>Travel</td>
+                      </tr>
+                      <tr>
+                        <td>AMA</td>
+                        <td>Amazon</td>
+                        <td></td>
+                        <td>Shopping</td>
+                      </tr>
+                      <tr>
+                        <td>EBAY</td>
+                        <td>Ebay</td>
+                        <td></td>
+                        <td>Shopping</td>
+                      </tr>
+                      <tr>
+                        <td>YouT</td>
+                        <td>Youtube</td>
+                        <td></td>
+                        <td>Entertainment</td>
+                      </tr>
+                      <tr>
+                        <td>Chas</td>
+                        <td>Chase</td>
+                        <td></td>
+                        <td>Finance</td>
+                      </tr>
+                      <tr>
+                        <td>MS</td>
+                        <td>Morgan Stanley</td>
+                        <td></td>
+                        <td>Finance</td>
+                      </tr>
+                    </table>
+                  </div>
+             
+                </div>
+
+              </div>
+            </div><!-- End Sales Card -->
+
+
+
+          </div>
+        </div><!-- End Left side columns -->
+
+
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <script>
+        // Get today's date
+        const today = new Date();
+
+        // Format the date as YYYY-MM-DD
+        const formatDate = (date) => {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        };
+
+        // Set the current date in the first input
+        const currentDateInput = document.getElementById('currentDate');
+        currentDateInput.value = formatDate(today);
+
+        // Calculate the next day
+        const nextDay = new Date(today);
+        nextDay.setDate(today.getDate() + 1);
+
+        // Set the next day in the second input
+        const nextDateInput = document.getElementById('nextDate');
+        nextDateInput.value = formatDate(nextDay);
+    </script>
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="../assets/vendor/echarts/echarts.min.js"></script>
+  <script src="../assets/vendor/quill/quill.js"></script>
+  <script src="../assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="../assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
