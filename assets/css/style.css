@@ -1591,6 +1591,7 @@ td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+  
 }
 
 tr:nth-child(even) {
@@ -1604,13 +1605,15 @@ table th{
 }
 table td{
   background-color: #fff !important;
+  font-size: 14px;
+
 }
 table a{
   color: #153C63 !important;
   text-decoration: underline;
 }
 .card-body label{
-  font-size: 16px;
+  font-size: 14px;
 }
 .card-body select{
   color: var(--third-color) !important;
@@ -1621,7 +1624,7 @@ table a{
   font-size: 14px;
   width: 100px;
   border-radius: 5px;
-font-size: 16px;
+font-size: 14px;
   height: 36px;
   font-weight: 500;
 
@@ -1633,4 +1636,31 @@ font-size: 16px;
 .filters div label{
   width: 100px;
 }
+.filter-02{
+  width: 100%;
+  justify-content: start !important;
+  margin-top: 15px !important;
+}
+}
+.truncate {
+  display: inline-block;
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.filter-02 label{
+  color: #006c7d  ;
+ 
+}
+.search-filter{
+  height: 30px;
+  padding-top: 5px; 
+  padding-bottom: 5px;
+  border-radius: 6px;
+  padding-left: 8px;
+  width: 200px;
+  font-size: 14px;
+  border: 1px solid #006c7d;
+  outline: none;
 }

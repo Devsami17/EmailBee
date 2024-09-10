@@ -198,7 +198,9 @@
                     </div>
                   
 <div class="d-flex gap-2 filters flex-wrap">
-
+<div class="d-flex me-3 justify-content-normal align-items-center">
+  <p class="mt-0 mb-0 fw-bold">Total 250,000</p>
+</div>
   <div class="d-flex justify-content-normal align-items-center gap-2 me-1">
     <label for="">Show Entries</label>
     <select name="" id="">
@@ -231,6 +233,41 @@
 
 </div>
                   </div>
+                  <div class="filter-02 d-flex gap-3  flex-wrap mt-1 justify-content-end">
+<input type="text" class="search-filter" placeholder="Search Record">
+                    <div>
+  <input type="checkbox">
+  <label for="">Duplicate</label>
+</div>
+<div>
+  <input type="checkbox">
+  <label for="">Dues</label>
+</div>
+<div>
+  <input type="checkbox">
+  <label for="">Bankable</label>
+</div>
+<div>
+  <input type="checkbox">
+  <label for="">Available</label>
+</div>
+<div>
+  <input type="checkbox" checked>
+  <label for="">Days</label>
+</div>
+<div>
+  <input type="checkbox">
+  <label for="">Title co</label>
+</div>
+<div>
+  <input type="checkbox">
+  <label for="">Value score</label>
+</div>
+<div>
+  <input type="checkbox">
+  <label for="">Comm (0)</label>
+</div>
+                  </div>
                   <div class="col-12 mt-3">
                     <table>
                       <tr class="header">
@@ -242,13 +279,13 @@
                       <tr>
                         <td>DVC</td>
                         <td>Disney Vacation Club</td>
-                        <td><a href="https://disneyvacationclub.disney.go.com/sign-in">https://disneyvacationclub.disney.go.com/sign-in</a></td>
+                        <td><a class="truncate" href="https://disneyvacationclub.disney.go.com/sign-in" >https://disneyvacationclub.disney.go.com/sign-in</a></td>
                         <td>Travel</td>
                       </tr>
                       <tr>
                         <td>DW</td>
                         <td>Disney World</td>
-                        <td><a href="https://disneyworld.disney.go.com/login">https://disneyworld.disney.go.com/login</a></td>
+                        <td><a class="truncate" href="https://disneyworld.disney.go.com/login">https://disneyworld.disney.go.com/login</a></td>
                         <td>Travel</td>
                       </tr>
                       <tr>
@@ -328,6 +365,8 @@
         // Set the next day in the second input
         const nextDateInput = document.getElementById('nextDate');
         nextDateInput.value = formatDate(nextDay);
+
+
     </script>
   <!-- Vendor JS Files -->
   <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>

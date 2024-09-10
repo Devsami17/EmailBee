@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Email Bee</title>
+        <title>Bulk Mail Bee</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -32,7 +32,7 @@
             <div class="container">
                   <div class="col-lg-4 d-flex justify-content-normal align-items-center">
             <img height="70px" src="abc.png" alt="not found">
-            <h1 class="mt-3">Email Bee</h1>
+            <h1 class="mt-3">Bulk Mail Bee</h1>
           </div>
           <div class="col-lg-6 d-flex justify-content-normal align-items-center gap-4">
             <a href=""> Home</a>
@@ -156,15 +156,23 @@
                     
                 </ul>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                        <ul>
-                            <li class="active">Affillitations</li>
-                            <li>Amazon Account </li>
-                            <li>Apple</li>
-                            <li>Chase Bank</li>
-                    
-                            
-                        </ul>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex ">
+<div class="col-8">
+
+<ul>
+    <li>Amazon Account</li>
+    <li>Apple</li>
+    <li>Chase Bank</li>
+</ul>
+</div>
+<div class="col-4">
+
+    <ul>
+        <li class="fw-bolder">250,000</li>
+        <li class="fw-bolder">525,157</li>
+        <li class="fw-bolder">488,666</li>
+    </ul>
+    </div>
                             </div>
 </div>
 </div>
@@ -190,6 +198,7 @@
                                     <div class="range-ticks"></div>
                                 </div>
                             </div>
+                            <h2 class="text-center fw-bold">Filter Your Request</h2>
                             <div class="tabs-parent">
 
                                 <div class="tabs-content-main">
@@ -201,14 +210,14 @@
                                                     <span>Discover Email Bee</span>
                                                 </div>
                                                 <div class="d-flex flex-column gap-lg-1 w-100 align-items-center">
+                                                  
+                                                <div class="tabs-main-content">
+                                                    <ul>
+                                                        <li>Country</li>
+                                                    </ul>
+                                                </div>
                                                     <div>
-                                                        <span>Starting From</span>
-                                                    </div>
-                                                    <div>
-                                                        <h4>$0</h4>
-                                                    </div>
-                                                    <div>
-                                                        <button>
+                                                        <button class="active"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                             <span>Sign Up</span>
                                                         </button>
                                                     </div>
@@ -241,15 +250,15 @@
                                                     <span>Ideal for growing businesses</span>
                                                 </div>
                                                 <div class="d-flex flex-column gap-lg-1 w-100 align-items-center">
-                                                    <div>
-                                                        <span>Starting From</span>
+                                                    <div class="tabs-main-content">
+                                                        <ul>
+                                                            <li>Country</li>
+                                                            <li>State</li>
+                                                            <li>Zip Code</li>
+                                                        </ul>
                                                     </div>
                                                     <div>
-                                                        <h4>$9
-                                                            </h4>
-                                                    </div>
-                                                    <div>
-                                                        <button class="active">
+                                                        <button data-bs-toggle="modal" data-bs-target="#exampleModal" >
                                                             <span>Sign Up</span>
                                                         </button>
                                                     </div>
@@ -287,14 +296,16 @@
                                                     <span>Perfect for High-Volume Needs</span>
                                                 </div>
                                                 <div class="d-flex flex-column gap-lg-1 w-100 align-items-center">
-                                                    <div>
-                                                        <span>Starting From</span>
+                                                    <div class="tabs-main-content">
+                                                        <ul>
+                                                            <li>Country</li>
+                                                            <li>State</li>
+                                                            <li>Zip Code</li>
+                                                            <li>Companies</li>
+                                                        </ul>
                                                     </div>
                                                     <div>
-                                                        <h4>$18</h4>
-                                                    </div>
-                                                    <div>
-                                                        <button>
+                                                        <button class="active" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                             <span>Sign Up</span>
                                                         </button>
                                                     </div>
@@ -375,6 +386,79 @@
                 </div>
             </div>
         </section>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 fw-bolder text-capitalize" id="exampleModalLabel">Filter Companies</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body flex-wrap d-flex justify-content-between">
+                <div>
+                    <ul>
+                        <li>
+                            <input type="checkbox">
+                            <img src="assets/logos/dvc-favicon.jpg" alt="not found">
+                            <p>DVC Sales</p>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <img src="assets/logos/apple.png" alt="not found">
+                            <p>Apple</p>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <img src="assets/logos/netflix.png" alt="not found">
+                            <p>Netflix</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="checkbox">
+                            <img src="assets/logos/aws.png" alt="not found">
+                            <p>AWS</p>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <img src="assets/logos/micros.png" alt="not found">
+                            <p>Microsoft</p>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <img src="assets/logos/meta.png" alt="not found">
+                            <p>Meta</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="checkbox">
+                            <img src="assets/logos/google.png" alt="not found">
+                            <p>Google</p>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <img src="assets/logos/nvidia.png" alt="not found">
+                            <p>Nvidia</p>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <img src="assets/logos/intel.png" alt="not found">
+                            <p>Intel</p>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary reset-btn" >Reset Filter</button>
+                  <button type="button" class="btn btn-primary ok-btn" data-bs-dismiss="modal">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
         <footer class="container d-flex flex-wrap mt-4">
            <div class="col-lg-4 col-md-6 col-sm-6 col-12 ">
@@ -409,7 +493,14 @@
         <script src="script.js"></script>
 <script src="pricing.js"></script>
 
-
+<script>
+     document.querySelector('.reset-btn').addEventListener('click', function() {
+        const checkboxes = document.querySelectorAll('.modal-body input[type="checkbox"]');
+        checkboxes.forEach(function(checkbox) {
+            checkbox.checked = false;
+        });
+    });
+</script>
    
         <!-- Bootstrap JavaScript Libraries -->
         <script

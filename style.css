@@ -203,6 +203,9 @@ display: none;
         gap:0px;
         width: 100%;
     }
+    .modal-body div{
+        width: 100%;
+    }
 }
 ul li{
     font-family: "Roboto";
@@ -239,4 +242,69 @@ footer ul li{
     margin-top: 10px;
     font-weight: 500;
     font-family: "Roboto";
+}
+#pricing h2{
+    font-family: "Raleway";
+}
+.tabs-main-content{
+    height: 150px;
+}
+.tabs-main-content ul{
+     padding: 0px ;
+}
+.tabs-main-content ul li{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto";
+    margin-top: 10px;
+}
+.modal-body ul{
+    padding: 0px;
+}
+.modal-body ul li{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    justify-content: normal;
+    align-items: center;
+    margin-top: 15px;
+}
+.modal-body ul li img{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+ 
+}
+.modal-body ul li p{
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.modal-body ul li input{
+    width: 15px;
+    height: 15px;
+}
+.modal{
+    --bs-modal-width: 700px !important;
+}
+.modal-body{
+    padding-left:50px !important ;
+    padding-right: 50px !important;
+}
+.reset-btn{
+    background-color: #009050 !important; 
+    font-weight: 500 !important;
+    font-family: "Raleway" !important;
+    border: none !important ;
+    
+}
+.ok-btn{
+    background-color: #F9E00B !important;
+    border: none !important ;
+
+    font-weight: 500 !important;
+    font-family: "Raleway" !important;
+    color: #000 !important;
 }
