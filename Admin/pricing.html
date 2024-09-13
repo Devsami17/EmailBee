@@ -162,7 +162,7 @@
 
 
       <li class="nav-item">
-        <a class="nav-link " data-bs-target="#components-nav" onclick="window.location='Filter-manager.html'" data-bs-toggle="collapse" href="Filter-manager.html">
+        <a class="nav-link collapsed " data-bs-target="#components-nav" onclick="window.location='Filter-manager.html'" data-bs-toggle="collapse" href="Filter-manager.html">
          &nbsp;<span>Filter Manager</span><i class="bi bi-chevron-right ms-auto"></i>
         </a>
      
@@ -188,7 +188,7 @@
       
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" onclick="window.location='pricing.html'" href="pricing.html">
+        <a class="nav-link " data-bs-target="#tables-nav" data-bs-toggle="collapse" onclick="window.location='pricing.html'" href="pricing.html">
          &nbsp;<span>Pricing Management</span><i class="bi bi-chevron-right ms-auto"></i>
         </a>
       
@@ -235,136 +235,91 @@
              
 
                 <div class="card-body">
-                  <div class="d-flex justify-content-between flex-wrap filter-parent">
-                    <div>
-                     <h5 class="card-title"><span>Filter-Manager</span></h5>   
-                    </div>
                   
-<div class="d-flex gap-2 filters flex-wrap">
-<div class="d-flex me-3 justify-content-normal align-items-center">
-  <p class="mt-0 mb-0 fw-bold">Total 250,000</p>
-</div>
-  <div class="d-flex justify-content-normal align-items-center gap-2 me-1">
-    <label for="">Show Entries</label>
-    <select name="" id="">
-      <option value="" >5</option>
-      <option value="" selected>10</option>
-      <option value="">25</option>
-      <option value="">50</option>
-      <option value="">75</option>
-      <option value="">100</option>
-      <option value="">All</option>
-
-    </select>
-  </div>
-  <div class="d-flex justify-content-normal align-items-center gap-2">
-    <label for="">Type</label>
-    <select name="" id="" style="width: 160px;">
-      <option value="" selected >All</option>
-      <option value="">Travel</option>
-      <option value="">Shopping</option>
-      <option value="">Entertainment</option>
-      <option value="">Finance</option>
-
-    </select>
-  </div>
-
-  <button class="pause-btn"><i class="bi bi-cloud-arrow-up"></i> &nbsp;Upload</button>
-  <button class="pause-btn"><i class="bi bi-filetype-csv"></i> &nbsp;Export As CSV</button>
-
-
-
-</div>
-                  </div>
-                  <div class="filter-02 d-flex gap-3  flex-wrap mt-1 justify-content-end">
-<input type="text" class="search-filter" placeholder="Search Record">
                     <div>
-  <input type="checkbox">
-  <label for="">Duplicate</label>
-</div>
-<div>
-  <input type="checkbox">
-  <label for="">Dues</label>
-</div>
-<div>
-  <input type="checkbox">
-  <label for="">Bankable</label>
-</div>
-<div>
-  <input type="checkbox">
-  <label for="">Available</label>
-</div>
-<div>
-  <input type="checkbox" checked>
-  <label for="">Days</label>
-</div>
-<div>
-  <input type="checkbox">
-  <label for="">Title co</label>
-</div>
-<div>
-  <input type="checkbox">
-  <label for="">Value score</label>
-</div>
-<div>
-  <input type="checkbox">
-  <label for="">Comm (0)</label>
-</div>
-                  </div>
-                  <div class="col-12 mt-3">
-                    <table>
-                      <tr class="header">
-                        <th>Code</th>
-                        <th>Company Name</th>
-                        <th>URL</th>
-                        <th>Type</th>
-                      </tr>
-                      <tr>
-                        <td>DVC</td>
-                        <td>Disney Vacation Club</td>
-                        <td><a class="truncate" href="https://disneyvacationclub.disney.go.com/sign-in" >https://disneyvacationclub.disney.go.com/sign-in</a></td>
-                        <td>Travel</td>
-                      </tr>
-                      <tr>
-                        <td>DW</td>
-                        <td>Disney World</td>
-                        <td><a class="truncate" href="https://disneyworld.disney.go.com/login">https://disneyworld.disney.go.com/login</a></td>
-                        <td>Travel</td>
-                      </tr>
-                      <tr>
-                        <td>AMA</td>
-                        <td>Amazon</td>
-                        <td></td>
-                        <td>Shopping</td>
-                      </tr>
-                      <tr>
-                        <td>EBAY</td>
-                        <td>Ebay</td>
-                        <td></td>
-                        <td>Shopping</td>
-                      </tr>
-                      <tr>
-                        <td>YouT</td>
-                        <td>Youtube</td>
-                        <td></td>
-                        <td>Entertainment</td>
-                      </tr>
-                      <tr>
-                        <td>Chas</td>
-                        <td>Chase</td>
-                        <td></td>
-                        <td>Finance</td>
-                      </tr>
-                      <tr>
-                        <td>MS</td>
-                        <td>Morgan Stanley</td>
-                        <td></td>
-                        <td>Finance</td>
-                      </tr>
-                    </table>
-                  </div>
-             
-                </div>
+                     <h5 class="card-title mb-0"><span>Pricing Management</span></h5> 
+                     <p>Adjust pricing and features for different subscription plans.</p>  
+                    </div>
+                    <div>
+                        <button class="pause-btn"> <i class="bi bi-cloud-arrow-up"></i>&nbsp; Add Package</button>
+                    <div class="pricing-parent">
+                      <div class="price-box">
+                        <h2>
+                          First Package
+                        </h2>
+                        <div class="pricing-inputs">
+                          <label for="">Title:</label>
+                          <input type="text" value="Bronze">
+                          <label for="">Title Description:</label>
+                          <input type="text" value="Discover Email Bee">
+                          <label for="">Description:</label>
+                          <input type="text" value="Country">
+                          <label for="">Price: ($)</label>
+                          <input type="text" value="100.00">
+                          <label for="">Services Title:</label>
+                          <input type="text" value="Services Included:">
+                          <label for="">Services: (Separate by commas)</label>
+                          <textarea  cols="10" rows="5">300 emails/day, Customizable email templates
+                          </textarea>
+                        <div class="price-box-btns">
+                          <button>Save Changes</button>
+                          <button>Remove</button>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="price-box">
+                        <h2>
+                          Second Package
+                        </h2>
+                        <div class="pricing-inputs">
+                          <label for="">Title:</label>
+                          <input type="text" value="Silver">
+                          <label for="">Title Description:</label>
+                          <input type="text" value="deal for growing businesses">
+                          <label for="">Description:</label>
+                          <label for="">Price: ($)</label>
+                          <input type="text" value="180.00">
+                          <input type="text" value="Country,State,Zip code">
+                          <label for="">Services Title:</label>
+                          <input type="text" value="Everything in Silver, plus:">
+                          <label for="">Services: (Separate by commas)</label>
+                          <textarea  cols="10" rows="5">No daily sending limit,No Email Bee logo (add-on),Basic reporting & analytics
+                          </textarea>
+                          <div class="price-box-btns">
+                            <button>Save Changes</button>
+                            <button>Remove</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="price-box">
+                        <h2>
+                          Third Package
+                        </h2>
+                        <div class="pricing-inputs">
+                          <label for="">Title:</label>
+                          <input type="text" value="Gold">
+                          <label for="">Title Description:</label>
+                          <input type="text" value="Perfect for High-Volume Needs"                          >
+                          <label for="">Description:</label>
+                          <input type="text" value="Country,State,Zip Code,Companies">
+                          <label for="">Price: ($)</label>
+                          <input type="text" value="250.00">
+                          <label for="">Services Title:</label>
+                          <input type="text" value="Everything in Gold, plus:">
+                          <label for="">Services: (Separate by commas)</label>
+                          <textarea  cols="10" rows="5">From 5,000 emails/month, Marketing Automation,Predictive Sending AI,Multi-user access (add-on),Landing Pages
+                          </textarea>
+                          <div class="price-box-btns">
+                            <button>Save Changes</button>
+                            <button>Remove</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      </div>
+                  
+
+          
 
               </div>
             </div><!-- End Sales Card -->

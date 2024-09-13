@@ -39,6 +39,7 @@
 
 <body>
 
+
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
 
@@ -162,7 +163,7 @@
 
 
       <li class="nav-item">
-        <a class="nav-link " data-bs-target="#components-nav" onclick="window.location='Filter-manager.html'" data-bs-toggle="collapse" href="Filter-manager.html">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" onclick="window.location='Filter-manager.html'" data-bs-toggle="collapse" href="Filter-manager.html">
          &nbsp;<span>Filter Manager</span><i class="bi bi-chevron-right ms-auto"></i>
         </a>
      
@@ -182,7 +183,7 @@
       
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" onclick="window.location='Blog-manager.html'" href="Blog-manager.html">
+        <a class="nav-link " data-bs-target="#tables-nav" data-bs-toggle="collapse" onclick="window.location='Blog-manager.html'" href="Blog-manager.html">
          &nbsp;<span>Blog Management</span><i class="bi bi-chevron-right ms-auto"></i>
         </a>
       
@@ -237,130 +238,70 @@
                 <div class="card-body">
                   <div class="d-flex justify-content-between flex-wrap filter-parent">
                     <div>
-                     <h5 class="card-title"><span>Filter-Manager</span></h5>   
+                     <h5 class="card-title"><span>Blogs Management</span></h5>   
                     </div>
-                  
-<div class="d-flex gap-2 filters flex-wrap">
-<div class="d-flex me-3 justify-content-normal align-items-center">
-  <p class="mt-0 mb-0 fw-bold">Total 250,000</p>
-</div>
-  <div class="d-flex justify-content-normal align-items-center gap-2 me-1">
-    <label for="">Show Entries</label>
-    <select name="" id="">
-      <option value="" >5</option>
-      <option value="" selected>10</option>
-      <option value="">25</option>
-      <option value="">50</option>
-      <option value="">75</option>
-      <option value="">100</option>
-      <option value="">All</option>
-
-    </select>
-  </div>
-  <div class="d-flex justify-content-normal align-items-center gap-2">
-    <label for="">Type</label>
-    <select name="" id="" style="width: 160px;">
-      <option value="" selected >All</option>
-      <option value="">Travel</option>
-      <option value="">Shopping</option>
-      <option value="">Entertainment</option>
-      <option value="">Finance</option>
-
-    </select>
-  </div>
-
-  <button class="pause-btn"><i class="bi bi-cloud-arrow-up"></i> &nbsp;Upload</button>
-  <button class="pause-btn"><i class="bi bi-filetype-csv"></i> &nbsp;Export As CSV</button>
-
-
-
-</div>
+                    <div class="d-flex gap-2 filters flex-wrap">
+                       
+                          <div class="d-flex justify-content-normal align-items-center gap-2 me-1">
+                            <label for="">Show Entries</label>
+                            <select name="" id="">
+                              <option value="" >5</option>
+                              <option value="" selected>10</option>
+                              <option value="">25</option>
+                              <option value="">50</option>
+                              <option value="">75</option>
+                              <option value="">100</option>
+                              <option value="">All</option>
+                        
+                            </select>
+                          </div>
+                          <div class="d-flex justify-content-normal align-items-center gap-2">
+                            <label for="">Status</label>
+                            <select name="" id="" style="width: 160px;">
+                              <option value="" selected >All</option>
+                              <option value="">Paid</option>
+                              <option value="">Pending</option>
+                              <option value="">Cancelled</option>
+                           
+                        
+                            </select>
+                          </div>
+                        
+                         
+                          <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="pause-btn add-blog"><i class="bi bi-upload"></i> &nbsp;Add New Blog</button>
+                        
+                        
+                        
+                        </div>
                   </div>
-                  <div class="filter-02 d-flex gap-3  flex-wrap mt-1 justify-content-end">
-<input type="text" class="search-filter" placeholder="Search Record">
-                    <div>
-  <input type="checkbox">
-  <label for="">Duplicate</label>
-</div>
-<div>
-  <input type="checkbox">
-  <label for="">Dues</label>
-</div>
-<div>
-  <input type="checkbox">
-  <label for="">Bankable</label>
-</div>
-<div>
-  <input type="checkbox">
-  <label for="">Available</label>
-</div>
-<div>
-  <input type="checkbox" checked>
-  <label for="">Days</label>
-</div>
-<div>
-  <input type="checkbox">
-  <label for="">Title co</label>
-</div>
-<div>
-  <input type="checkbox">
-  <label for="">Value score</label>
-</div>
-<div>
-  <input type="checkbox">
-  <label for="">Comm (0)</label>
-</div>
-                  </div>
+
                   <div class="col-12 mt-3">
                     <table>
                       <tr class="header">
-                        <th>Code</th>
-                        <th>Company Name</th>
-                        <th>URL</th>
-                        <th>Type</th>
+                        <th>SNO</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Date Published</th>
+                        <th>Author</th>
+                        <th>Featured Image</th>
+                        <th>Status </th>
+                        <th>Actions</th>
+                      
                       </tr>
-                      <tr>
-                        <td>DVC</td>
-                        <td>Disney Vacation Club</td>
-                        <td><a class="truncate" href="https://disneyvacationclub.disney.go.com/sign-in" >https://disneyvacationclub.disney.go.com/sign-in</a></td>
-                        <td>Travel</td>
-                      </tr>
-                      <tr>
-                        <td>DW</td>
-                        <td>Disney World</td>
-                        <td><a class="truncate" href="https://disneyworld.disney.go.com/login">https://disneyworld.disney.go.com/login</a></td>
-                        <td>Travel</td>
-                      </tr>
-                      <tr>
-                        <td>AMA</td>
-                        <td>Amazon</td>
-                        <td></td>
-                        <td>Shopping</td>
-                      </tr>
-                      <tr>
-                        <td>EBAY</td>
-                        <td>Ebay</td>
-                        <td></td>
-                        <td>Shopping</td>
-                      </tr>
-                      <tr>
-                        <td>YouT</td>
-                        <td>Youtube</td>
-                        <td></td>
-                        <td>Entertainment</td>
-                      </tr>
-                      <tr>
-                        <td>Chas</td>
-                        <td>Chase</td>
-                        <td></td>
-                        <td>Finance</td>
-                      </tr>
-                      <tr>
-                        <td>MS</td>
-                        <td>Morgan Stanley</td>
-                        <td></td>
-                        <td>Finance</td>
-                      </tr>
+                  <tr>
+                    <td>01</td>
+                    <td>Example Blog Post...</td>
+                    <td><a href="#" class="truncate text-decoration-none">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, iure!</a></td>
+                    <td>2024-09-13</td>
+                    <td>Admin</td>
+                    <td>
+                        <img src="../assets/logos/website.png" alt="nt" height="30px">
+                    </td>
+                    <td class="text-success fw-bold">Published</td>
+                    <td class="text-danger text-decoration-underline">Remove</td>
+                  </tr>
+                     
+
                     </table>
                   </div>
              
@@ -378,7 +319,25 @@
 
       </div>
     </section>
-
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title fw-bolder" id="offcanvasRightLabel">Add Blog Post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+       <div>
+        <label for="">Title:</label>
+        <input type="text" class="form-control mb-3">
+        <label for="">Description:</label>
+       <textarea name="" id="" cols="30" rows="4" class="form-control mb-4"  ></textarea>
+        <label for="">Date Published:</label>
+        <input type="date" class="form-control mb-4 mt-1">
+        <label for="">Featured Image:</label>
+        <input type="file" class="form-control mt-1">
+        <button class="pause-btn w-100" style="color:#fff !important;background-color:  #006c7d !important;">Published</button>
+       </div>
+        </div>
+      </div>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->

@@ -383,8 +383,8 @@ h6 {
 
 .nav-tabs-bordered .nav-link.active {
   background-color: #fff;
-  color: #4154f1;
-  border-bottom: 2px solid #4154f1;
+  color: var(--third-color);
+  border-bottom: 2px solid var(--third-color);
 }
 
 /*--------------------------------------------------------------
@@ -756,6 +756,7 @@ h6 {
   color: #fff;
   background: var(--third-color);
   border-left: 3px solid #fff ;
+  transition: all 300ms ease-in-out;
 }
 
 .sidebar-nav .nav-link:hover i {
@@ -1079,7 +1080,7 @@ h6 {
 }
 
 .profile .profile-overview .card-title {
-  color: #012970;
+  color:var(--third-color);
 }
 
 .profile .profile-overview .label {
@@ -1641,6 +1642,10 @@ font-size: 14px;
   justify-content: start !important;
   margin-top: 15px !important;
 }
+.price-box{
+  width: 100% !important;
+  padding: 30px 10px !important;
+}
 }
 .truncate {
   display: inline-block;
@@ -1663,4 +1668,74 @@ font-size: 14px;
   font-size: 14px;
   border: 1px solid #006c7d;
   outline: none;
+}
+.price-box{
+  padding: 30px 50px;
+  border: 2px solid #006c7d;
+  width: 70%;
+  margin-top: 20px;
+  
+}
+.price-box h2{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Raleway";
+}
+.pricing-inputs{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.pricing-inputs label{
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+.pricing-inputs  input{
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  border: 1px solid #006c7d;
+  margin-bottom: 15px;
+  height: 34px;
+  padding-left: 5px;
+  font-size: 14px;
+}
+.pricing-inputs  textarea{
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  border: 1px solid #006c7d;
+  margin-bottom: 15px;
+
+  padding-left: 5px;
+
+  font-size: 14px;
+}
+.pricing-inputs  input:focus{
+
+  box-shadow: 1px 1px 3px #006c7d;
+}
+.price-box-btns button{
+  border: none;
+outline: none;
+font-size: 14px;
+padding: 8px 12px;
+border-radius: 4px;
+}
+.price-box-btns button:nth-child(1){
+  background-color: #006c7d;
+  color: #fff;
+ 
+}
+.price-box-btns button:nth-child(2){
+  background-color: #f33c3c ;
+  color: #fff;
+
+}
+.add-blog{
+  background-color: #006c7d !important;
+  color: #fff !important;
+  box-shadow: 1px 1px 1px #006c7d;
 }
